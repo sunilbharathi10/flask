@@ -1,0 +1,37 @@
+<html>
+    <body>
+        <center>
+            
+        <h1>EMPLOYEES DETAILS LIST</h1>
+        <table border=2px>
+            <tr style="background-color:red;">
+                <th>ID</th>
+                <th>NAME</th>
+                <th>PASSWORD</th>
+                <th>Role</th>
+                <th>Email</th>
+                <th>SAlARY</th>
+                <th>update<th>
+            </tr>
+            {% for data in result %}
+            <tr style="background-color:black; color:white;">
+                <h4><td>{{data[0]}}</td></h4>
+                <h4><td>{{data[1]}}</td></h4>
+                <h4><td>{{data[2]}}</td></h4>
+                <h4><td>{{data[3]}}</td></h4>
+                <h4><td>{{data[4]}}</td></h4>
+                <h4><td>{{data[5]}}</td></h4>
+                <h4><td><a href="/update/{{data[0]}}">update</a></td></h4>
+                <h4><td><a href="/delete/{{data[0]}}">delete</a></td></h4>
+                
+
+
+            </tr>
+            {% endfor %}
+        </table>
+        <a href="/">click to register</a>
+        </center>
+    </body>
+
+</html>
+

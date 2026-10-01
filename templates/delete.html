@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete Employees</title>
+</head>
+<body>
+    <h2>Are you sure you want to delete this record?</h2>
+
+    <p>ID: {{recording[0]}}</p>
+    <p>NAME: {{recording[1]}}</p>
+    <p>PASSWORD: {{recording[2]}}</p>
+    <p>ROLE: {{recording[3]}}</p>
+    <p>EMAIL: {{recording[4]}}</p>
+    <p>SALARY: {{recording[5]}}</p>
+
+    <form action="/delete/{{recording[0]}}" method="POST">
+        <button type="submit">YES DELETE 🗑</button>
+    </form>
+
+    <a href="/read"><button type="button">DON'T DELETE 🗑</button></a>
+</body>
+</html>
+
+

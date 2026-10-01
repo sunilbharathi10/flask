@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update User</title>
+    <style>
+        body{
+            background-color:red;
+            font-family: Arial;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Update User</h1>
+
+<form action="" method="POST">
+
+    
+
+    <label>ID:</label>
+    <input type="number" name="id" value="{{ user.id }}"><br><br>
+
+    <label>Name:</label>
+    <input type="text" name="name" value="{{ user.name }}"><br><br>
+
+    <label>Email:</label>
+    <input type="email" name="email" value="{{ user.email }}"><br><br>
+
+    <label>Password:</label>
+    <input type="password" name="password" value="{{ user.password }}"><br><br>
+
+  
+
+    <button type="submit">click to update</button>
+
+</form>
+
+</body>
+</html>
+
+
+
+
